@@ -32,15 +32,6 @@ body:
         - label: ✔ WORKS 
         - label: ❕ works partially (elaborate below)
         - label: ❌ does not work (elaborate below)
-
-
-
-
-
-
-
-
-
   - type: textarea
       id: what-happened
       attributes:
