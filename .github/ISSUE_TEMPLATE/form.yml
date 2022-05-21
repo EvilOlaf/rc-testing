@@ -18,7 +18,7 @@ body:
   - type: checkboxes
     id: boot_to_cli
     attributes:
-      label: Does the board boot to command line interface and does first login procedere including user creation work
+      label: Does the board boot to command line interface and does first login procedere, including user creation, work?
       description: You may select more than one.
       options:
         - label: macOS
