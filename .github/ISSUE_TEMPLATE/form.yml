@@ -93,7 +93,7 @@ body:
     attributes:
       label: UART boot log
       description: If possible provide full boot log from debug serial via UART
-      value: "U-Boot ...."
+      value: ""
     validations:
       required: false
   - type: textarea
