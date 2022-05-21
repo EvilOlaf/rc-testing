@@ -6,23 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Please put image file name into title.
-  - type: input
-    id: board
-    attributes:
-      label: Board/SBC
-      description: On which SBC you are reporting?
-      placeholder: ex. Orange Pi Zero, Nanopi R4S, Raxda Zero, ...
-    validations:
-      required: true
-  - type: input
-    id: image
-    attributes:
-      label: Tested image
-      description: Please specify the image you have tested.
-      placeholder: ex. Armbian_22.05.1_Clearfogpro_focal_current_5.15.35.img.xz
-    validations:
-      required: true
+        Please put full image file name into title. ex. Armbian_22.05.1_Clearfogpro_focal_current_5.15.35.img.xz
   - type: checkboxes
     id: boot_to_cli
     attributes:
@@ -35,6 +19,14 @@ body:
     id: boot_to_gui
     attributes:
       label: Does the board boot to XFCE GUI and is the desktop environment usable normally?
+      options:
+        - label: ✔ WORKS
+        - label: ❌ does not work (elaborate below)
+        - label: ➖ untested
+  - type: checkboxes
+    id: ssh
+    attributes:
+      label: Does login to the board via SSH work?
       options:
         - label: ✔ WORKS
         - label: ❌ does not work (elaborate below)
@@ -72,13 +64,22 @@ body:
         - label: ❌ does not work (elaborate below)
         - label: ➖ untested
   - type: checkboxes
-    id: hdmi
+    id: gpio
     attributes:
-      label: If the board has wired networking does it work with expected speed? (ex. 100Mbit, 1000Mbit...)
+      label: If the board has GPIO pins do they work?
       options:
         - label: ✔ WORKS
         - label: ❌ does not work (elaborate below)
         - label: ➖ untested
+  - type: checkboxes
+    id: audio
+    attributes:
+      label: If the board has analog audio jack does it work?
+      options:
+        - label: ✔ WORKS
+        - label: ❌ does not work (elaborate below)
+        - label: ➖ untested
+        
   - type: textarea
     id: uartboot
     attributes:
