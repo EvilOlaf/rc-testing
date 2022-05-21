@@ -19,7 +19,7 @@ body:
     id: boot to CLI
     attributes:
       label: Does the board boot to command line interface and does first login procedere including user creation work?
-
+      description: You may select more than one.
       options:
         - label: macOS
         - label: Windows
