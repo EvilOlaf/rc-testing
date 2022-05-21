@@ -95,9 +95,9 @@ body:
       description: If possible provide full boot log from debug serial via UART
       value: |
         <details>
-        ```
+        <pre>
         Parse the log in here. Do not remove the backticks.
-        ```
+        </pre>
         </details>
     validations:
       required: false
