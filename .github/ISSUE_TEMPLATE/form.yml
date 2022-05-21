@@ -79,14 +79,12 @@ body:
         - label: ✔ WORKS
         - label: ❌ does not work (elaborate below)
         - label: ➖ untested
-        
-        
   - type: textarea
     id: uartboot
     attributes:
       label: UART boot log
       description: If possible provide full boot log from debug serial via UART
-      value: ""
+      value: "asdf"
     validations:
       required: true
   - type: textarea
