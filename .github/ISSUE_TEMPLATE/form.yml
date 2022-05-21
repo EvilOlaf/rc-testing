@@ -79,6 +79,14 @@ body:
         - label: ✔ WORKS
         - label: ❌ does not work (elaborate below)
         - label: ➖ untested
+  - type: checkboxes
+    id: audio
+    attributes:
+      label: If the board has USB ports do they work? Test common devices like memory stick or keyboard if possible.
+      options:
+        - label: ✔ WORKS
+        - label: ❌ does not work (elaborate below)
+        - label: ➖ untested
         
   - type: textarea
     id: uartboot
