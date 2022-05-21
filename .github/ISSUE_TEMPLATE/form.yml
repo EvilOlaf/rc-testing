@@ -16,17 +16,10 @@ body:
     validations:
       required: true
   - type: checkboxes
-    id: terms2
+    id: boot to CLI
     attributes:
-      label: Tested functions
-      options:
-        - label: I agree to follow this project's Code of Conduct
-          required: true
-  - type: checkboxes
-    id: operating-systems
-    attributes:
-      label: Which operating systems have you used?
-      description: You may select more than one.
+      label: Does the board boot to command line interface and does first login procedere, including user creation, work?
+
       options:
         - label: macOS
         - label: Windows
