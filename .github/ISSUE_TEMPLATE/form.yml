@@ -42,7 +42,7 @@ body:
   - type: checkboxes
     id: lan
     attributes:
-      label: If the board has wired networking does it work with expected speed? Please do iperf3 test if possible.
+      label: If the board has wired networking does it work with expected speed? Do iperf3 test if possible.
       options:
         - label: ✔ WORKS
         - label: ❌ does not work (elaborate below)
@@ -82,7 +82,7 @@ body:
   - type: checkboxes
     id: usb
     attributes:
-      label: If the board has USB ports do they work? Test common devices like memory stick or keyboard if possible.
+      label: If the board has USB ports do they work with common devices like memory stick or keyboard?
       options:
         - label: ✔ WORKS
         - label: ❌ does not work (elaborate below)
