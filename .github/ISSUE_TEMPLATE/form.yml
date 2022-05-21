@@ -1,5 +1,5 @@
 name: Release candidate report
-description: Reporting for board maintainers to RC images. **Please put board name into title!**
+description: For each tested image please create individuals ports. __Please put image file name into title!__
 title: "[RC]: "
 labels: ["for review"]
 body:
@@ -15,15 +15,33 @@ body:
       placeholder: ex. Orange Pi Zero, Nanopi R4S, Raxda Zero, ...
     validations:
       required: true
+  - type: input
+    id: image
+    attributes:
+      label: Tested image
+      description: Please specify the image you have tested.
+      placeholder: ex. Armbian_22.05.1_Clearfogpro_focal_current_5.15.35.img.xz
+    validations:
+      required: true
+      
   - type: checkboxes
     id: boot_to_cli
     attributes:
       label: Does the board boot to command line interface and does first login procedere, including user creation, work?
       options:
         - label: ✔ WORKS 
-        - label: works partially (elaborate below)
-        - label: does not work (elaborate below)
-  - type: textarea
+        - label: ❕ works partially (elaborate below)
+        - label: ❌ does not work (elaborate below)
+
+
+
+
+
+
+
+
+
+- type: textarea
     id: what-happened
     attributes:
       label: What happened?
