@@ -80,7 +80,7 @@ body:
         - label: ❌ does not work (elaborate below)
         - label: ➖ untested
   - type: checkboxes
-    id: audio
+    id: usb
     attributes:
       label: If the board has USB ports do they work? Test common devices like memory stick or keyboard if possible.
       options:
