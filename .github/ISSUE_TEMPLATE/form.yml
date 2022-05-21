@@ -94,9 +94,11 @@ body:
       label: UART boot log
       description: If possible provide full boot log from debug serial via UART
       value: |
+        <details>
         ```
         Parse the log in here. Do not remove the backticks.
         ```
+        </details>
     validations:
       required: false
   - type: textarea
