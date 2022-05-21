@@ -1,5 +1,5 @@
-name: "Release candidate report"
-description: "For each tested image please create individuals ports. __Please put image file name into title!__"
+name: Release candidate report
+description: For each tested image please create individuals ports. Please put image file name into title!
 title: "[RC]: "
 labels: ["for review"]
 body:
