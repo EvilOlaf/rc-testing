@@ -1,12 +1,12 @@
 name: Release candidate report
-description: For each tested image please create individuals ports. Please put image file name into title!
+description: For each tested image please create individuals ports. 
 title: "[RC]: "
 labels: ["for review"]
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
+        Please put image file name into title.
   - type: input
     id: board
     attributes:
@@ -23,20 +23,27 @@ body:
       placeholder: ex. Armbian_22.05.1_Clearfogpro_focal_current_5.15.35.img.xz
     validations:
       required: true
-      
   - type: checkboxes
     id: boot_to_cli
     attributes:
-      label: Does the board boot to command line interface and does first login procedere, including user creation, work?
+      label: Does the board boot to CLI and does first login procedere, including user creation, work?
       options:
-        - label: ✔ WORKS 
-        - label: ❕ works partially (elaborate below)
+        - label: ✔ WORKS
         - label: ❌ does not work (elaborate below)
+        - label: ➖ untested
+  - type: checkboxes
+    id: boot_to_gui
+    attributes:
+      label: Does the board boot to XFCE GUI and is the desktop environment usable normally?
+      options:
+        - label: ✔ WORKS
+        - label: ❌ does not work (elaborate below)
+        - label: ➖ untested
   - type: textarea
     id: what-happened
     attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
+      label: Elaboration
+      description: If 
       placeholder: Tell us what you see!
       value: "A bug happened!"
     validations:
