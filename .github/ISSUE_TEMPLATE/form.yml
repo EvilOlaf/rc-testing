@@ -20,9 +20,9 @@ body:
     attributes:
       label: Does the board boot to command line interface and does first login procedere, including user creation, work?
       options:
-        - label: macOS
-        - label: Windows
-        - label: Linux
+        - label: ✔ WORKS 
+        - label: works partially (elaborate below)
+        - label: does not work (elaborate below)
   - type: textarea
     id: what-happened
     attributes:
