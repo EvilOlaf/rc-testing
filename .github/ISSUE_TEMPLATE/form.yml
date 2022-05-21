@@ -39,8 +39,58 @@ body:
         - label: ✔ WORKS
         - label: ❌ does not work (elaborate below)
         - label: ➖ untested
+  - type: checkboxes
+    id: reboot
+    attributes:
+      label: Does the board reboot?
+      options:1
+        - label: ✔ WORKS
+        - label: ❌ does not work (elaborate below)
+        - label: ➖ untested
+  - type: checkboxes
+    id: lan
+    attributes:
+      label: If the board has wired networking does it work with expected speed? Please do iperf3 test if possible.
+      options:
+        - label: ✔ WORKS
+        - label: ❌ does not work (elaborate below)
+        - label: ➖ untested
+  - type: checkboxes
+    id: wireless
+    attributes:
+      label: If the board has wireless networking does it work? Please do iperf3 test if possible.
+      options:
+        - label: ✔ WORKS
+        - label: ❌ does not work (elaborate below)
+        - label: ➖ untested
+  - type: checkboxes
+    id: bt
+    attributes:
+      label: If the board has bluetooth does it work?
+      options:
+        - label: ✔ WORKS
+        - label: ❌ does not work (elaborate below)
+        - label: ➖ untested
+  - type: checkboxes
+    id: hdmi
+    attributes:
+      label: If the board has wired networking does it work with expected speed? (ex. 100Mbit, 1000Mbit...)
+      options:
+        - label: ✔ WORKS
+        - label: ❌ does not work (elaborate below)
+        - label: ➖ untested
+        
+        
   - type: textarea
-    id: what-happened
+    id: uartboot
+    attributes:
+      label: UART boot log
+      description: If possible provide full boot log from debug serial via UART
+      value: ""
+    validations:
+      required: true
+  - type: textarea
+    id: elaboration
     attributes:
       label: Elaboration
       description: If 
