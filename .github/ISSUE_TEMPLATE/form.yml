@@ -16,7 +16,7 @@ body:
     validations:
       required: true
   - type: checkboxes
-    id: terms
+    id: terms2
     attributes:
       label: Tested functions
       options:
