@@ -85,14 +85,14 @@ body:
     attributes:
       label: UART boot log
       description: If possible provide full boot log from debug serial via UART
-      value: "asdf"
+      value: "U-Boot ...."
     validations:
-      required: true
+      required: false
   - type: textarea
     id: elaboration
     attributes:
       label: Elaboration
-      description: If 
+      description: If something does not work properly please try to elaborate further.
       placeholder: Tell us what you see!
       value: "A bug happened!"
     validations:
