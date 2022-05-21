@@ -96,7 +96,9 @@ body:
       value: |
         <details>
         <pre>
-        Parse the log in here. Do not remove the backticks.
+        
+        Replace this line with the actual output.
+        
         </pre>
         </details>
     validations:
@@ -109,4 +111,4 @@ body:
       placeholder: Tell us what you see!
       value: "A bug happened!"
     validations:
-      required: true
+      required: false
